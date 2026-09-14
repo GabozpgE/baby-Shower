@@ -12,14 +12,14 @@
 <meta property="og:description" content="Sábado 10 de octubre · 5:00 PM · Uruapan, Mich.">
 <meta property="og:image" content="img/inicio-640.webp">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232E5991'/%3E%3Cpath d='M5 10h22v13H5z' fill='%23FAFAF6'/%3E%3Cpath d='M5 10l11 8 11-8' fill='none' stroke='%232E5991' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23F2B84B'/%3E%3Cg fill='%238B5A2B'%3E%3Cellipse cx='12' cy='16' rx='5' ry='4'/%3E%3Cellipse cx='6.2' cy='10' rx='2' ry='2.5'/%3E%3Cellipse cx='10.2' cy='7.4' rx='2.1' ry='2.6'/%3E%3Cellipse cx='14.4' cy='7.7' rx='2.1' ry='2.6'/%3E%3Cellipse cx='18.2' cy='10.6' rx='1.9' ry='2.3'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="img/fondo-560.webp" imagesrcset="img/fondo-560.webp 560w, img/fondo-900.webp 900w" imagesizes="100vw" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
 <noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap">
   <style>
     body.is-locked{overflow:auto!important;position:static!important;height:auto!important}
     #pantallaSobre{display:none!important}
@@ -32,19 +32,21 @@
 
 <!-- ═══════════════ PANTALLA 1 · EL SOBRE ═══════════════ -->
 <section id="pantallaSobre" class="sobre-screen" aria-label="Abrir la invitación">
-  <img class="sobre-bg" src="img/fondo-560.webp"
-       srcset="img/fondo-560.webp 560w, img/fondo-900.webp 900w"
-       sizes="100vw" alt="" fetchpriority="high" decoding="async">
+  <div class="sobre-bgbox" aria-hidden="true">
+    <img class="sobre-bg" src="img/fondo-560.webp"
+         srcset="img/fondo-560.webp 560w, img/fondo-900.webp 900w"
+         sizes="100vw" alt="" fetchpriority="high" decoding="async">
+  </div>
   <div class="sobre-bg-veil" aria-hidden="true"></div>
 
-  <div class="sparkles" aria-hidden="true">
-    <span style="--x:12%;--y:22%;--d:0s"></span>
-    <span style="--x:84%;--y:18%;--d:1.1s"></span>
-    <span style="--x:22%;--y:74%;--d:2.2s"></span>
-    <span style="--x:78%;--y:80%;--d:.6s"></span>
-    <span style="--x:50%;--y:12%;--d:1.7s"></span>
-    <span style="--x:8%;--y:52%;--d:2.8s"></span>
-    <span style="--x:92%;--y:58%;--d:3.3s"></span>
+  <div class="floaters" aria-hidden="true">
+    <span class="fl-leaf" style="--x:11%;--y:20%;--d:0s;--s:.9"></span>
+    <span class="fl-leaf" style="--x:87%;--y:29%;--d:2.4s;--s:1.1"></span>
+    <span class="fl-leaf" style="--x:24%;--y:62%;--d:4.1s;--s:.8"></span>
+    <span class="fl-leaf" style="--x:80%;--y:68%;--d:6s;--s:1"></span>
+    <span class="fl-dot" style="--x:52%;--y:13%;--d:1.2s"></span>
+    <span class="fl-dot" style="--x:16%;--y:44%;--d:3s"></span>
+    <span class="fl-dot" style="--x:92%;--y:50%;--d:4.6s"></span>
   </div>
 
   <div class="sobre-stage">
@@ -54,7 +56,7 @@
 
       <span class="letter" aria-hidden="true">
         <span class="letter-inner">
-          <span class="letter-orn">&#10047;</span>
+          <img class="letter-leon" src="img/leon-300.webp" width="300" height="257" alt="" decoding="async">
           <span class="letter-kicker">Baby Shower</span>
           <span class="letter-name">Gonzalo</span>
           <span class="letter-rule"></span>
@@ -70,13 +72,21 @@
 
       <span class="env-flap" aria-hidden="true"></span>
 
-      <span class="seal" aria-hidden="true"><span class="seal-ring">N&amp;J</span></span>
+      <span class="seal" aria-hidden="true"><i class="seal-paw"></i></span>
     </button>
 
     <p class="sobre-hint" id="sobreHint">
       <span class="hand" aria-hidden="true"></span>
       <span class="hint-text">Toca para abrir el sobre</span>
     </p>
+  </div>
+
+  <!-- Suelo de safari -->
+  <div class="savana" aria-hidden="true">
+    <img class="sv-jirafa" src="img/jirafa-300.webp" width="300" height="509" alt="" decoding="async">
+    <img class="sv-leon" src="img/leon-300.webp" width="300" height="257" alt="" decoding="async">
+    <div class="sv-hill"></div>
+    <div class="grass grass-sv" data-blades="22" data-h="34" data-layer="sv"></div>
   </div>
 </section>
 
@@ -89,52 +99,68 @@
     <img class="hero-img" src="img/inicio-640.webp"
          srcset="img/inicio-640.webp 640w, img/inicio-1000.webp 1000w"
          sizes="(max-width: 700px) 100vw, 640px"
-         width="1429" height="2000" alt="Baby Shower de Gonzalo. Sábado 10 de octubre a las 5 PM. Papá: Jorge Luis Higareda Paredes. Mamá: Celia Anayantzi Natalia Zamora Peréz." decoding="async">
+         width="1429" height="2000" alt="Baby Shower de Gonzalo. Sábado 10 de octubre a las 5 PM. Papá: Jorge Luis Higareda Paredes. Mamá: Natalia Zamora Peréz." decoding="async">
     <div class="scroll-cue" aria-hidden="true">
       <span class="scroll-cue-txt">Desliza</span>
       <span class="chev"></span>
     </div>
   </header>
 
-  <!-- Ultrasonido -->
+  <!-- Ultrasonido entre el pasto -->
   <section class="sec sec-ultra reveal" aria-labelledby="t-ultra">
-    <span class="eyebrow">Nuestro pequeño</span>
+    <span class="eyebrow">Nuestro pequeño cachorro</span>
     <h2 class="title" id="t-ultra">Ya casi estoy aquí</h2>
-    <span class="divider" aria-hidden="true"><i></i><b>&#10047;</b><i></i></span>
+    <span class="divider" aria-hidden="true"><i></i><em class="leaf"></em><i></i></span>
 
-    <figure class="ultra-frame">
-      <div class="ultra-tape ultra-tape-l" aria-hidden="true"></div>
-      <div class="ultra-tape ultra-tape-r" aria-hidden="true"></div>
-      <img src="img/ultrasonido-480.webp"
-           srcset="img/ultrasonido-480.webp 480w, img/ultrasonido-678.webp 678w"
-           sizes="(max-width: 700px) 78vw, 420px"
-           width="678" height="605" alt="Imagen de ultrasonido de Gonzalo" loading="lazy" decoding="async">
-      <figcaption>Gonzalo &middot; primera foto</figcaption>
-    </figure>
+    <div class="clearing" id="clearing">
+      <div class="cl-sun" aria-hidden="true"></div>
+      <div class="cl-hill cl-hill-a" aria-hidden="true"></div>
+      <div class="cl-hill cl-hill-b" aria-hidden="true"></div>
+
+      <div class="grass grass-back" data-blades="20" data-h="40" data-layer="back" aria-hidden="true"></div>
+
+      <figure class="ultra-frame">
+        <div class="ultra-tape ultra-tape-l" aria-hidden="true"></div>
+        <div class="ultra-tape ultra-tape-r" aria-hidden="true"></div>
+        <img src="img/ultrasonido-480.webp"
+             srcset="img/ultrasonido-480.webp 480w, img/ultrasonido-678.webp 678w"
+             sizes="(max-width: 700px) 66vw, 330px"
+             width="678" height="605" alt="Imagen de ultrasonido de Gonzalo" loading="lazy" decoding="async">
+        <figcaption>Gonzalo &middot; primera foto</figcaption>
+      </figure>
+
+      <img class="cl-jirafa" src="img/jirafa-300.webp" width="300" height="509" alt="" loading="lazy" decoding="async" aria-hidden="true">
+      <div class="grass grass-mid" data-blades="18" data-h="54" data-layer="mid" aria-hidden="true"></div>
+      <img class="cl-leon" src="img/leon-300.webp" width="300" height="257" alt="" loading="lazy" decoding="async" aria-hidden="true">
+      <div class="grass grass-front" data-blades="18" data-h="74" data-layer="front" data-profile="wings" aria-hidden="true"></div>
+    </div>
 
     <p class="lead">Te invitamos a celebrar con nosotros la llegada de nuestro pequeño hijo junto a nuestros seres queridos.</p>
   </section>
 
   <!-- Contador -->
   <section class="sec sec-count reveal" aria-labelledby="t-count">
-    <span class="eyebrow">Falta poco</span>
+    <span class="eyebrow">Falta poquito</span>
     <h2 class="title" id="t-count">Cuenta regresiva</h2>
-    <span class="divider" aria-hidden="true"><i></i><b>&#10047;</b><i></i></span>
+    <span class="divider" aria-hidden="true"><i></i><em class="leaf"></em><i></i></span>
 
     <div class="countdown" id="countdown" role="timer" aria-live="polite" aria-atomic="true">
       <div class="cd-cell">
         <span class="cd-num" id="cdDias">--</span>
         <span class="cd-lbl">Días</span>
+        <span class="grass cd-turf" data-blades="9" data-h="17" data-layer="cd1" aria-hidden="true"></span>
       </div>
       <span class="cd-sep" aria-hidden="true"></span>
       <div class="cd-cell">
         <span class="cd-num" id="cdHoras">--</span>
         <span class="cd-lbl">Horas</span>
+        <span class="grass cd-turf" data-blades="9" data-h="17" data-layer="cd2" aria-hidden="true"></span>
       </div>
       <span class="cd-sep" aria-hidden="true"></span>
       <div class="cd-cell">
         <span class="cd-num" id="cdMinutos">--</span>
         <span class="cd-lbl">Minutos</span>
+        <span class="grass cd-turf" data-blades="9" data-h="17" data-layer="cd3" aria-hidden="true"></span>
       </div>
     </div>
 
@@ -143,25 +169,28 @@
 
   <!-- Ubicación -->
   <section class="sec sec-loc reveal" aria-labelledby="t-loc">
-    <span class="eyebrow">¿Dónde nos vemos?</span>
-    <h2 class="title" id="t-loc">El Jardin</h2>
-    <span class="divider" aria-hidden="true"><i></i><b>&#10047;</b><i></i></span>
+    <span class="eyebrow">Nuestra expedición</span>
+    <h2 class="title" id="t-loc">¿Dónde nos vemos?</h2>
+    <span class="divider" aria-hidden="true"><i></i><em class="leaf"></em><i></i></span>
 
     <a class="map-card" href="https://maps.app.goo.gl/3yH8ZpvNktXoH4dk7" target="_blank" rel="noopener noreferrer">
       <div class="map-art" aria-hidden="true">
-        <span class="park p1"></span><span class="park p2"></span>
-        <span class="road r1"></span><span class="road r2"></span>
-        <span class="road r3"></span><span class="road r4"></span>
-        <span class="road rd"></span>
-        <span class="blk b1"></span><span class="blk b2"></span>
-        <span class="blk b3"></span><span class="blk b4"></span>
-        <span class="blk b5"></span>
-        <span class="pulse"></span>
-        <span class="pin"><b></b></span>
+        <span class="mp-road mp-r1"></span>
+        <span class="mp-road mp-r2"></span>
+        <span class="mp-water"></span>
+        <span class="mp-bush bs1"></span><span class="mp-bush bs2"></span>
+        <span class="mp-bush bs3"></span><span class="mp-bush bs4"></span>
+        <span class="mp-tree tr1"><b></b><u></u></span>
+        <span class="mp-tree tr2"><b></b><u></u></span>
+        <span class="mp-paw pw1"></span><span class="mp-paw pw2"></span>
+        <span class="mp-paw pw3"></span><span class="mp-paw pw4"></span>
+        <span class="mp-pulse"></span>
+        <span class="mp-pin"><b></b></span>
+        <div class="grass map-turf" data-blades="24" data-h="22" data-layer="map"></div>
       </div>
       <div class="map-body">
         <p class="map-addr">Perú&nbsp;245, Los Ángeles<br>60160 Uruapan, Mich.</p>
-        <span class="btn">Ver en Google Maps</span>
+        <span class="btn"><i class="btn-paw"></i>Ver en Google Maps</span>
       </div>
     </a>
 
@@ -182,9 +211,16 @@
 
   <!-- Cierre -->
   <footer class="sec sec-end reveal">
-    <span class="divider" aria-hidden="true"><i></i><b>&#10047;</b><i></i></span>
+    <span class="divider" aria-hidden="true"><i></i><em class="leaf"></em><i></i></span>
     <p class="end-script">¡Te esperamos!</p>
-    <p class="end-names">Jorge Luis &nbsp;&amp;&nbsp; Celia Anayantzi</p>
+    <p class="end-names">Jorge Luis &nbsp;&amp;&nbsp; Natalia</p>
+
+    <div class="end-scene" aria-hidden="true">
+      <img class="es-jirafa" src="img/jirafa-300.webp" width="300" height="509" alt="" loading="lazy" decoding="async">
+      <img class="es-leon" src="img/leon-300.webp" width="300" height="257" alt="" loading="lazy" decoding="async">
+      <div class="es-hill"></div>
+      <div class="grass grass-end" data-blades="20" data-h="40" data-layer="end"></div>
+    </div>
   </footer>
 </main>
 
